@@ -44,40 +44,40 @@ window.onload = function () {
 
     // All of the different tile colors in RGB
     var tilecolors = [
-        ['#6699cc', 'water'],
-        ['#cc3333', 'fire'],
-        ['#ffcc33', 'electrik'],
-        ['#66cc66', 'grass'],
-        ['#9999cc', 'wind'],
-        ['#9966cc', 'poison'],
-        ['#66cccc', 'ice'],
-        ['#cc6633', 'earth'],
-        ['#ff6666', 'psychic']
+        ['#6699cc', 'winecup'],
+        ['#cc3333', 'coneflower'],
+        ['#ffcc33', 'bluebonnet'],
+        ['#66cc66', 'crossvine'],
+        ['#9999cc', 'wisteria'],
+        ['#9966cc', 'paintbrush'],
+        ['#66cccc', 'lantana'],
+        ['#cc6633', 'beebalm'],
+        ['#ff6666', 'rosemallow']
     ];
 
 
     var playercounters = {
-        earth: 0,
-        electrik: 0,
-        fire: 0,
-        grass: 0,
-        ice: 0,
-        poison: 0,
-        psychic: 0,
-        water: 0,
-        wind: 0
+        beebalm: 0,
+        bluebonnet: 0,
+        coneflower: 0,
+        crossvine: 0,
+        lantana: 0,
+        paintbrush: 0,
+        rosemallow: 0,
+        winecup: 0,
+        wisteria: 0
     }
 
     var computercounters = {
-        earth: 0,
-        electrik: 0,
-        fire: 0,
-        grass: 0,
-        ice: 0,
-        poison: 0,
-        psychic: 0,
-        water: 0,
-        wind: 0
+        beebalm: 0,
+        bluebonnet: 0,
+        coneflower: 0,
+        crossvine: 0,
+        lantana: 0,
+        paintbrush: 0,
+        rosemallow: 0,
+        winecup: 0,
+        wisteria: 0
     }
 
 
