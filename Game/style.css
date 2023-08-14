@@ -74,7 +74,6 @@ body { margin:0; padding:0; }
 #board .tile a.candy3 { background-color:#FC0; border-color:#F90; }
 #board .tile a.candy4 { background-color:#C39; border-color:#C06; }
 #board .tile a.candy5 { background-color:#390; border-color:#090; }
-
 #board .tile a.selected {
 	animation:fadeInOut 0.6s linear 0 infinite alternate;
 	-moz-animation:fadeInOut 0.6s linear 0 infinite alternate;
