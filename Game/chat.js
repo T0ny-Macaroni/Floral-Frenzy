@@ -17,12 +17,13 @@ firebase.initializeApp(firebaseConfig);
 const db = firebase.database();
 
 // get user's data
-localStorage.getItem('username')
-if (username===true) {
-
-}else {
+const username = localStorage.getItem('username')
+console.log(username);
+if (!username) {
     const username = prompt('Please Tell us Your Name');    
-    localStorage.setItem(username);
+    localStorage.setItem('username', username);
+}else {
+
 }
 
 // submit form
