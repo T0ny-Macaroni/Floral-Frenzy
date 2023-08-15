@@ -5,8 +5,8 @@ var boardSize = 8;
 var candyNum = 5;
 var active;
 var tileWidth;
-var resetButton = document.getElementsByClassName('is-warning');
-var saveButton = document.getElementsByClassName('is-info');
+var resetButton = document.querySelector('.is-warning');
+var saveButton = document.querySelector('.is-info');
 
 var scores = [];
 
@@ -298,8 +298,9 @@ function gameOver() {
 }
 
 function resetBoard() {
-	var board = document.getElementById('board')
-	board.reset();
+	// var board = document.getElementById('board')
+	location.reload;
+
 }
 
 function saveScore() {
@@ -308,6 +309,9 @@ function saveScore() {
 	localStorage.setItem('score', JSON.stringify(scores));
 };
 
-
 resetButton.addEventListener('click', resetBoard);
 saveButton.addEventListener('click', saveScore);
+
+
+
+	

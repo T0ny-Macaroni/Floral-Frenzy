@@ -17,7 +17,13 @@ firebase.initializeApp(firebaseConfig);
 const db = firebase.database();
 
 // get user's data
-const username = prompt("Please Tell Us Your Name");
+localStorage.getItem('username')
+if (username===true) {
+
+}else {
+    const username = prompt('Please Tell us Your Name');    
+    localStorage.setItem(username);
+}
 
 // submit form
 // listen for submit event on the form and call the postChat function
@@ -54,7 +60,6 @@ const fetchChat = db.ref("messages/");
 
 // check for new messages using the onChildAdded event listener
 fetchChat.on("child_added", function (snapshot) {
-    console.log(snapshot);
     const messages = snapshot.val();
     const message = `<li class=${username === messages.username ? "sent" : "receive"
         }><span>${messages.username}: </span>${messages.message}</li>`;
