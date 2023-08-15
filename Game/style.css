@@ -15,7 +15,7 @@ body {
 }
 
 #score {
-	font-size:12px; color:#FC0; font-weight:bold; line-height:30px; width:90px;
+	font-size:12px; color:#FC0; font-weight:bold; line-height:30px; width:120px; height:auto;
 	background-color:#D00; border-radius:10px; padding:0 15px;
 	box-shadow:4px 4px 10px #D00 inset, 5px 5px 5px #FFF inset;
 	position:absolute; top:10px; left:100px;
@@ -74,11 +74,11 @@ body {
 	position:absolute; width:55%; height:55%; top:5%; left:5%; border-radius:70% 30%;
 	background-color:rgba(255, 255, 255, 0.15);
 }
-#board .tile a.candy1 { background-color:#F60; border-color:#F30; }
-#board .tile a.candy2 { background-color:#06F; border-color:#03C; }
-#board .tile a.candy3 { background-color:#FC0; border-color:#F90; }
-#board .tile a.candy4 { background-color:#C39; border-color:#C06; }
-#board .tile a.candy5 { background-color:#390; border-color:#090; }
+#board .tile a.candy1 {background-image:url('../assets/beebalm.png'); background-size: contain; background-color:#F60; border-color:#F30; }
+#board .tile a.candy2 {background-image:url('../assets/lantana.png'); background-size: contain;  background-color:#06F; border-color:#03C; }
+#board .tile a.candy3 {background-image:url('../assets/crossvine.png');background-size: contain; background-color:#FC0; border-color:#F90; }
+#board .tile a.candy4 { background-image:url('../assets/winecup.png'); background-size: contain; background-color:#C39; border-color:#C06; }
+#board .tile a.candy5 {background-image: url('../assets/acanthus.png'); background-size: contain; background-color:#390; border-color:#090;   } 
 #board .tile a.selected {
 	animation:fadeInOut 0.6s linear 0 infinite alternate;
 	-moz-animation:fadeInOut 0.6s linear 0 infinite alternate;
@@ -118,4 +118,14 @@ body {
 	position:absolute; top:0; left:0; z-index:999; display:none;
 }
 
+.is-warning {
+	position: absolute;
+	right:250px;
+	top: 150px;
+}
 
+.is-info {
+	position: absolute;
+	right: 250px;
+	top: 100px;
+}
