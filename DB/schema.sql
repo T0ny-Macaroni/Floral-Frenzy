@@ -10,5 +10,5 @@ CREATE TABLE users (
 
 CREATE TABLE scores (
 
-    
+
 )
