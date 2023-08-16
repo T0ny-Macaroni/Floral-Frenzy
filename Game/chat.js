@@ -17,14 +17,9 @@ firebase.initializeApp(firebaseConfig);
 const db = firebase.database();
 
 // get user's data
-const username = localStorage.getItem('username')
-console.log(username);
-if (!username) {
-    const username = prompt('Please Tell us Your Name');    
-    localStorage.setItem('username', username);
-}else {
 
-}
+const username = prompt('Please Tell us Your Name');    
+
 
 // submit form
 // listen for submit event on the form and call the postChat function
