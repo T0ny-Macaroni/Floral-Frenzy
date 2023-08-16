@@ -58,6 +58,9 @@ GitHub [issues page](https://github.com/T0ny-Macaroni/Floral-Frenzy/issues)
 No testing currently set
    
 ## [FAQs](#table-of-contents)
+Match-3 game developed based on:
+https://github.com/jdelak/match3JS
+
 Contact Information:
 
 [GitHub](https://github.com/T0ny-Macaroni) / Email: tonyguiliani3502@gmail.com
