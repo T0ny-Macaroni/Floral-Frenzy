@@ -60,7 +60,42 @@ $(document).ready(function() {
       <button id="message-btn" type="submit">Send</button>
   </form>
 </div>
-  </div>
+<div>
+  <table id="scoreTable">
+    <tr>
+      <th>Player</th>
+      <th>Score</th>
+    </tr>
+  </table>
+  <script>
+    // Function to append score from localStorage to table
+    function appendScoreToTable() {
+      // Retrieve score from localStorage
+      const score = localStorage.getItem('score');
+
+      // Check if score exists in localStorage
+      if (score !== null) {
+        const table = document.getElementById('scoreTable');
+
+        // Create a new row for the table
+        const newRow = table.insertRow();
+
+        // Create cells for player name and score
+        const playerNameCell = newRow.insertCell(0);
+        const scoreCell = newRow.insertCell(1);
+
+        // Set the player name and score in the cells
+       playerName =  localStorage.getItem('username')
+        playerNameCell.innerHTML = `${playerName}`; // You can set the player name dynamically if needed
+        scoreCell.innerHTML = score;
+      }
+    }
+
+    // Call the function to append the score to the table
+    appendScoreToTable();
+</script>
+    </div>
+
   <!-- scripts -->
   <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
