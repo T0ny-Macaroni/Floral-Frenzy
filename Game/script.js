@@ -298,16 +298,14 @@ function gameOver() {
 }
 
 function resetBoard() {
-	// var board = document.getElementById('board')
-	location.reload;
-
-}
-
-function saveScore() {
-	console.log(scores);
-	scores.push(score);
-	localStorage.setItem('score', JSON.stringify(scores));
-};
+	window.location.reload();
+	}
+	
+	function saveScore() {
+		console.log(scores);
+		scores.push(score);
+		localStorage.setItem('score', JSON.stringify(scores));
+	};
 
 resetButton.addEventListener('click', resetBoard);
 saveButton.addEventListener('click', saveScore);
