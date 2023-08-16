@@ -2,10 +2,10 @@ const path = require('path');
 const express = require('express');
 const session = require('express-session');
 const exphbs = require('express-handlebars');
-const routes = require('./Login/controllers');
-const helpers = require('./Login/utils/helpers');
+const routes = require('./controllers');
+const helpers = require('./utils/helpers');
 
-const sequelize = require('./Login/config/connection');
+const sequelize = require('./config/connection');
 
 // Create a new sequelize store using the express-session package
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
@@ -35,6 +35,8 @@ app.set('view engine', 'handlebars');
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'Game')));
+
 
 app.use(routes);
 
